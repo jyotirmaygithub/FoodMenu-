@@ -1,13 +1,67 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --imgborder: #D4AC0D;
+}
+.universal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container{
+  width: 45vw;
+}
+.image-box{
+  width: 25vw;
+}
+.for-image{
+  /* height: 200px; */
+  width: 100%;
+  object-fit: contain;
+  padding: 5px;
+  border: 3px solid var(--imgborder) ;
+}
+.card-box{
+  padding: 10px;
+}
+.dotted-line{
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+}
+.update-price{
+  color: var(--imgborder);
+}
+.heading-box,header{
+  width: 100vw;
+  justify-content: center;
+  margin: 30px;
+}
+.heading-box h1{
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: var(--imgborder);
+}
+li{
+  list-style: none;
+  color: var(--imgborder);
+  padding: 10px 20px;
+}
+.addition{
+  justify-content: center;
+}
+li:hover{
+  background-color: var(--imgborder);
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
 }
